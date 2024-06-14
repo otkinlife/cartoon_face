@@ -1,0 +1,131 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+}
+
+.avatar {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    background: #4CAF50;
+    /* 绿色背景 */
+    border-radius: 20px;
+    /* 圆角 */
+    margin-bottom: 20px;
+    /* 底部外边距 */
+    border: 5px solid #fff;
+    /* 白色边框 */
+}
+
+.face {
+    position: absolute;
+    top: 30px;
+    /* 调整脸部位置 */
+    left: 50%;
+    transform: translateX(-50%);
+    width: 160px;
+    /* 增大脸部宽度 */
+    height: 140px;
+    /* 增大脸部高度 */
+    background: #FDD835;
+    /* 脸部颜色 */
+    border-radius: 20px;
+    /* 圆角 */
+}
+
+.eye {
+    position: absolute;
+    top: 40px;
+    /* 调整眼睛位置 */
+    width: 20px;
+    height: 20px;
+    background: #3b2e2a;
+    /* 眼睛颜色 */
+    border-radius: 50%;
+    /* 圆形 */
+    transition: all 0.5s ease;
+}
+
+.eye.left {
+    left: 30px;
+    /* 左眼位置 */
+}
+
+.eye.right {
+    right: 30px;
+    /* 右眼位置 */
+}
+
+.mouth {
+    position: absolute;
+    top: 110px;
+    /* 调整嘴巴位置 */
+    left: 50%;
+    transform: translateX(-50%);
+    width: 30px;
+    height: 10px;
+    background: #3b2e2a;
+    /* 嘴巴颜色 */
+    border-radius: 50%;
+    /* 圆角 */
+    transition: all 0.5s ease;
+}
+
+.blush {
+    position: absolute;
+    top: 80px;
+    /* 调整红晕位置 */
+    width: 30px;
+    height: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.blush.left {
+    left: 20px;
+    /* 左侧红晕位置 */
+}
+
+.blush.right {
+    right: 20px;
+    /* 右侧红晕位置 */
+}
+
+.blush-mark {
+    width: 6px;
+    height: 10px;
+    background: #f48787;
+    /* 红色腮红线条 */
+    border-radius: 10px;
+    /* 圆角 */
+}
+
+.button-container {
+    text-align: center;
+}
+
+button {
+    background-color: #4CAF50;
+    /* 绿色背景 */
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 12px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #45a049;
+}
